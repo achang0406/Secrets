@@ -1,0 +1,27 @@
+<div class="row">
+	<div class="col-sm-4 col-sm-offset-1">
+		<h1>New User</h1>
+		<form action='/users' method='post'>
+			<input type='hidden' name='authenticity_token' value='<%= form_authenticity_token %>'>
+			<div class="form-group">
+				<label for='email'><span>Email</span></label>
+				<input type='text' id='email' class="form-control" name='email'>
+			</div>
+			<div class="form-group">
+				<label for='name'><span>Name</span>
+				</label>
+				<input type='text' id='name' class="form-control" name='name'>
+			</div>
+			<div class="form-group">
+				<label for='password'><span>Password</span></label>
+				<input type='password' id='password' class="form-control" name='password'>
+			</div>
+			<div class="form-group">
+				<label for='password_confirmation'><span>Password Confirmation</span></label>
+				<input type='password' id='password_confirmation' class="form-control" name='password_confirmation'>
+			</div>
+			<button type='submit' class="btn btn-default" value='Join'>Join</button>
+		</form>
+		<a href="/sessions/new">Already has an account? Sign in here!</a>
+	</div>
+</div>
